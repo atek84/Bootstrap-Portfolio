@@ -1,64 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-us">
+
 <head>
-    <title>Basic Profile</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>Bootstrap Portfolio</title>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  
 </head>
 
 <body>
-    <!-- Header code -->
-    <div class='header-container'>
-        <header class="wrapper">
-        
-        <div class='name'>Tony Kam</div>
-    
-        <nav class=items>
-            <ul>
-                <li id="item-list"><a href="index.html">About |</a></li>
-                <li id="item-list"><a href="portfolio.html">Portfolio |</a></li>
-                <li id="item-list"><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        </header>   
-    </div>  
-    <!-- End of Header code -->
-    <!-- Main background code-->
-    <div class="main-container">
-
-        <!-- Main Box within main-container -->
-        <div id='main-box'> <!--wrapper'-->
-        
-            <!-- Switched this element from 'div' to 'article' -->
-            <div class="bodyarea">
-                <h2>Contact</h2>
-                <br>
-                <div class="emailform">
-                    <form action="mailto:atek84@yahoo.com" method="post" enctype="text/plain">
-                        Name:<br>
-                    <input type="text" name="name"><br>
-                    E-mail:<br>
-                    <input type="text" name="mail"><br>
-                    Message:<br>
-                    <input type="text" name="comment" size="50"><br><br>
-                    <input type="submit" value="Submit">
-                    </form>
-                </div>
-            </div>
-        <!-- Social-box within main-container -->
-        <!-- Switched this element from "div" to "aside" -->    
-            <div class='social-box'>
-            
-                <h3 id="header">Connect With Me</h3>
-                <ul>
-                    <li><a href="https://github.com/atek84"><img class ="size" src="assets/images/git-hub.jpg"></a></li>
-                    <li><a href="https://linkedin.com/in/tony-kam-593526142"><img class = "size" src="assets/images/linked-in.jpg" ></a></li>
-                    <li><img class="size" src="assets/images/stack-overflow.jpg"></li>
-                </ul>
-            </div>
-        </div>  
+	<!-- Nav Bar -->
+	<nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Tony Kam</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavBar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">About</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-    <footer>
-        &copy;Copyright 2017 Tony Kam
-    </footer>   
+  </nav>
+  
+  <!-- End of navbar -->
+  <!-- Main Body -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="page-header">
+          <h1>Contact</h1>
+        </div>
+        <div class="row">
+          <div class="col-md-8" >
+            <form action="mailto:atek84@yahoo.com" method="post" enctype="text/plain">
+              Name:<br>
+              <input type="text" name="name"><br>
+              E-mail:<br>
+              <input type="text" name="mail">
+              <div class="form-group">
+                <label for="comment">Message:</label>
+                
+                <textarea class="form-control" rows="10" id="comment"></textarea>
+              </div>
+              <input type="submit"> 
+            </form>  
+          </div>
+        </div>  
+      </div> 
+      <div class="row">
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title">Connect With Me</h3>
+          </div>
+          <div class="panel-body">
+            <div class="btn-group" role="group" aria-label="...">
+              <button type="button" class="btn btn-default"><a href="https://github.com/atek84"><img class ="size" src="images/github.png"></a></button>
+              <button type="button" class="btn btn-default"><a href="https://linkedin.com/in/tony-kam-593526142"><img class = "size" src="images/linked-in.png"></a></button>
+              <button type="button" class="btn btn-default"><img class="size" src="images/overflow.png"></button>
+            </div>
+      </div>    
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+
+
+
 </body>
 </html>
